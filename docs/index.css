@@ -1,0 +1,106 @@
+.zSct {
+    position: relative;
+    width: 280px;
+}
+
+.zSct+select {
+    position: fixed;
+    left: -999px;
+}
+
+.zSct--focus {
+    outline: 2px dashed rgb(4, 0, 255);
+    outline-offset: 1px;
+}
+
+/* .zSct__body */
+.zSct__body {
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px 7px;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.zSct__body::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin: -11px 0 0;
+    transform: rotate(-45deg);
+}
+
+/* /.zSct__body */
+
+/* .zSct__menu */
+.zSct__menu {
+    display: none;
+    overflow: hidden;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid #000;
+    padding: 0px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.36);
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    right: -1px;
+    margin: 2px 0 0;
+    border-radius: 10px;
+}
+
+.zSct__menu--open {
+    display: block;
+}
+
+/* /.zSct__menu */
+
+/* .zSct__option */
+.zSct__option {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.zSct__option:hover {
+    background: #1e90ff;
+    color: #fff;
+}
+
+.zSct__option--selected {
+    cursor: default;
+    position: relative;
+    background: #00488f;
+    color: #fff;
+}
+
+.zSct__option--selected:hover {
+    cursor: default;
+}
+
+.zSct__option--disabled {
+    background: #fff;
+    cursor: default;
+    opacity: 0.5;
+    color: #000;
+}
+
+.zSct__option--disabled:hover {
+    background: #fff;
+    cursor: default;
+    opacity: 0.5;
+    color: #000;
+}
+
+/* /.zSct__option */

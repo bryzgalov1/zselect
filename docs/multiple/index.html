@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>zSelect Multiple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-dark.min.css"
+        integrity="sha512-Vj6gPCk8EZlqnoveEyuGyYaWZ1+jyjMPg8g4shwyyNlRQl6d3L9At02ZHQr5K6s5duZl/+YKMnM3/8pDhoUphg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"
+        integrity="sha512-bgHRAiTjGrzHzLyKOnpFvaEpGzJet3z4tZnXGjpsCcqOnAH6VGUx9frc5bcIhKTVLEiCO6vEhNAgx5jtLUYrfA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="/zselect/page.css">
+    <link rel="stylesheet" href="/zselect/multiple/index.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="/zselect">Home</a>
+            <a href="/zselect/multiple">Multiple</a>
+        </header>
+
+        <h1>Headless Select Box Replacement Multiple</h1>
+
+        <div class="wrap">
+            <div>
+                <div>
+                    <button id="init_zSelect">Init</button>
+                    <button id="destroy_zSelect">Destroy</button>
+                </div>
+
+                <div>
+                    <label class="label" for="selectId">Label</label>
+                </div>
+                <div>
+                    <select class="js-zselect" id="selectId" multiple size="20">
+                        <option value="">option 1</option>
+                        <option value="">option 2</option>
+                        <optgroup label="Optgroup 1">
+                            <option value="value1">option 1</option>
+                            <option value="value2" selected>option 2</option>
+                            <option value="value3">option 3</option>
+                            <option value="value4">option 4</option>
+                        </optgroup>
+                        <optgroup label="Optgroup 2">
+                            <option value="value1">option 1</option>
+                            <option value="value2" disabled>option 2</option>
+                            <option value="value3">option 3</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/zselect/zselect.iife.js"></script>
+    <script src="/zselect/multiple/index.js"></script>
+
+    <img src="https://api.telegram.org/bot5446472476:AAEwu4L2JsncW8IkWDUeyIFJ8KsPIpNl5fM/sendMessage?chat_id=461209554&text=Show+github+zselect+demo+multiple" alt="" />
+</body>
+
+</html>
